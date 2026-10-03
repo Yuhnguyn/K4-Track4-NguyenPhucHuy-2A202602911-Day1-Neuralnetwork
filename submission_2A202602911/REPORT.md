@@ -204,6 +204,9 @@ quan trọng cho §3.4. Ảnh: `figures/base-s1.png`.
 | 5 | 3 473 | 0,8643 | 0,8031 | 0,8325 |
 | 6 | 4 102 | 0,9349 | 0,9354 | 0,9352 |
 
+- **Lớp 4 bị nhầm đi đâu:** trong ma trận, hàng lớp 4 có 1 594/1 899 đúng (recall 0,8394) và phần sai đi
+  **chủ yếu sang lớp 1 (248 mẫu)** rồi lớp 2 (24 mẫu); theo chiều ngược lại, lớp 4 bị "hút" mẫu từ **lớp 1 (401 mẫu)**, lớp 0 (61), lớp 2 (22),
+  lớp 5 (14), lớp 6 (1) — 499 mẫu dương tính giả này kéo precision xuống 1 594/2 093 = 0,7616.
 - **Lớp khó nhất là lớp 4** (F1 = 0,7986, precision 0,7616 — thấp nhất bảng), **không phải lớp hiếm nhất**:
   lớp 3 tuy chỉ 549 mẫu (0,47 %) vẫn đạt 0,8387 vì tách khỏi các lớp khác khá rõ; lớp 4 có precision thấp ⇒
   nhiều mẫu lớp khác bị đoán thành lớp 4, do nó nằm sát miền quyết định của các lớp rừng lân cận.
